@@ -1,24 +1,26 @@
-import { BrowserRouter as Router, Route, Routes, Link  } from "react-router-dom";
-import Home from "./pages/Home"
-import Login from "./pages/Login"
+import { BrowserRouter as Router, Route, Routes  } from "react-router-dom";
+import React from "react";
 
-import Container from "./layout/Container";
+import Home from "./Components/pages/Home.js";
+import Login from "./Components/pages/Login.js";
+
+import Container from "./Components/layout/Container.js";
+import Navbar from "./Components/layout/Navbar.jsx";
+import Footer from "./Components/layout/Footer.jsx";
+
 
 function App() {
   return (
     <div>
       <Router>
-        <div>
-          <Link to='/'>Home</Link>
-          <Link to='/login'>Login</Link>
-        </div>
-        <Container customClass="minHeight">
-          <Routes>
-            <Route exact path='/' element={<Home />} />
-            <Route exact path='/login' element={<Login />} />
-          </Routes>
-        </Container>
-        <p>Footer</p>
+        <Navbar />
+          <Container customClass="minHeight">
+            <Routes>
+              <Route exact path='/' element={<Home />} />
+              <Route exact path='/login' element={<Login />} />
+            </Routes>
+          </Container>
+        <Footer />
         </Router>
     </div>
   );
