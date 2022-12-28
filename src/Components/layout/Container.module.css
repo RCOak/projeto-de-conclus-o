@@ -4,6 +4,7 @@
     justify-content: space-between;
     margin: 0 auto;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .minHeight {
