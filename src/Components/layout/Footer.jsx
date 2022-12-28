@@ -1,5 +1,5 @@
 import React from "react";
-import {FaFacebook, FaInstagram, FaLinkedin} from 'react-icons/fa'
+import {FaYoutube, FaInstagram, FaTwitch} from 'react-icons/fa'
 
 import styles from './Footer.module.css'
 
@@ -7,19 +7,24 @@ function Footer() {
     return (
     <div>
         <footer className={styles.footer}>
+            <div className={styles.logo}>
+                <img src='https://cdn.discordapp.com/attachments/596820253984555164/1057348548716408935/Dado-Vorpal-Marca.png' alt=''></img>
+            </div>
             <ul className={styles.social_list}>
-                <li>
-                    <FaFacebook />
-                </li>
                 <li>
                     <FaInstagram />
                 </li>
                 <li>
-                    <FaLinkedin />
+                    <FaYoutube />
+                </li>
+                <li>
+                    <FaTwitch />
                 </li>
             </ul>
-            <p className={styles.copy_right}><span>Dado Vorpal</span> &copy; 2022</p>
         </footer>
+        <div className={styles.copy_right}>
+            <p className={styles.footercopyr}><span>Dado Vorpal</span> &copy; 2022</p>
+        </div>
     </div>
     )
 }

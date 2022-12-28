@@ -1,14 +1,43 @@
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    background-color: #222;
-    padding: 1em;
+.unavbar {
+    background-color: #73231dff;
+    height: 30px;
 }
 
 .list {
     display: flex;
     list-style: none;
+    margin-top: 0;
+    height: 30px;
+}
+
+.item {
+    margin-right: 5em;
+    color: #fff;
+    font-size: x-small;
+    display: flex;
     align-items: center;
+}
+
+.itemb {
+    position: absolute;
+    right: 75px;    
+    color: #222 ;
+    font-size: large;
+    margin-right: 1em;
+}
+
+.icons {
+    color: #222;
+    margin-right: 1em;
+    font-size: large;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #222;
+    padding: 1em;
+    height: 110px;
 }
 
 .item {
@@ -21,6 +50,45 @@
 }
 
 .item a:hover {
-    color: #ffbb33;
+    color: #d3312bff;;
     text-decoration: none;
 }
+
+.ilogin {
+    padding: 0px 3px 0px 3px;
+    border: 3px solid #73231dff;
+    border-radius: 50%;
+    font-size: x-large;
+    
+}
+
+.cart {
+    font-size: x-large;
+}
+
+.menu {
+    color: #fff;
+    font-size: xx-large;
+}
+
+.menuicons {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 75px;
+}
+
+.logo {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo {
+box-sizing: content-box;
+max-width: 350px;
+}
+
+    
+
+
