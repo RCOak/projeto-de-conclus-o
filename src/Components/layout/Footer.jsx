@@ -2,13 +2,14 @@ import React from "react";
 import {FaYoutube, FaInstagram, FaTwitch} from 'react-icons/fa'
 
 import styles from './Footer.module.css'
+import LogoFooter from '../images/LogoFooter.png'
 
 function Footer() {
     return (
     <div>
         <footer className={styles.footer}>
             <div className={styles.logo}>
-                <img src='https://cdn.discordapp.com/attachments/596820253984555164/1057348548716408935/Dado-Vorpal-Marca.png' alt=''></img>
+                <img src={LogoFooter} alt=''></img>
             </div>
             <ul className={styles.social_list}>
                 <li>
@@ -23,7 +24,7 @@ function Footer() {
             </ul>
         </footer>
         <div className={styles.copy_right}>
-            <p className={styles.footercopyr}><span>Dado Vorpal</span> &copy; 2022</p>
+            <p><span>Dado Vorpal</span> &copy; 2022</p>
         </div>
     </div>
     )

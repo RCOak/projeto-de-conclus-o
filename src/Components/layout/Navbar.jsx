@@ -3,6 +3,8 @@ import React from 'react'
 import Container from './Container.js'
 
 import styles from './Navbar.module.css'
+import LogoDV from '../images/LogoDV.png'
+
 import { BsFillPersonFill, BsBag, BsList, BsFillGeoAltFill, BsFillTelephoneFill, BsEnvelopeFill, BsSearch } from "react-icons/bs";
 
 function Navbar() {
@@ -20,7 +22,7 @@ function Navbar() {
                   <span className={styles.icons}><BsEnvelopeFill /></span><p>email</p>
                   </li>
                   <li className={styles.itemb}>
-                  <p><BsSearch /></p>
+                  <p className={styles.iconsb}><BsSearch /></p>
                   </li>
                 </ul>           
           </div>
@@ -28,7 +30,7 @@ function Navbar() {
             <Container>
               <div className={styles.logo}>
                 <p>
-                  <Link to='/'><img src='https://cdn.discordapp.com/attachments/596820253984555164/1057348548716408935/Dado-Vorpal-Marca.png' alt=''></img></Link>
+                  <Link to='/'><img src={LogoDV} alt=''></img></Link>
                 </p>
               </div>
               <div className={styles.menuicons}>
