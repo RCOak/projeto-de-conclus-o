@@ -2,5 +2,7 @@
     background-image: url("https://cdn.discordapp.com/attachments/596820253984555164/1057348406982488084/Banner_principal.png");
     background-position: center;
     background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
 }
 
