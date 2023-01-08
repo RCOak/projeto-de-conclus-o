@@ -1,14 +1,6 @@
 .tophome {
-    background-image: url(https://cdn.discordapp.com/attachments/596820253984555164/1057348406982488084/Banner_principal.png);
-    position: relative;
+    background-image: url("https://cdn.discordapp.com/attachments/596820253984555164/1057348406982488084/Banner_principal.png");
     background-position: center;
-}
-
-.mask {
-    position: absolute;
-    z-index: 1;
-    color: white;
-    top: 10px;
-    right: 10px;
+    background-repeat: no-repeat;
 }
 
