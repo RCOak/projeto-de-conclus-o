@@ -1,0 +1,40 @@
+.midhome {
+    background-color: #E5E9EC;
+}
+
+.mhtext > h1 {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-decoration: underline;
+    padding-top: 47px;
+    padding-bottom: 47px;
+    color: #1C1C1C;
+}
+
+.mhcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.mhbtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    align-content: center;
+}
+
+.mhbtn > button {
+    width: 398px;
+    height: 57px;
+    border: 3px solid #D3312B;
+    background-color: #E5E9EC;
+    font-size: larger;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.mhbtn > button {
+    font-size: 1.5em;
+    cursor: pointer;
+}

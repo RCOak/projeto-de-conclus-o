@@ -1,8 +1,87 @@
 .tophome {
-    background-image: url("https://cdn.discordapp.com/attachments/596820253984555164/1057348406982488084/Banner_principal.png");
+    background-image: url("../images/Banner_principal.png");
     background-position: center;
     background-repeat: no-repeat;
-    width: 100%;
+    width: 1520px;
     height: 600px;
 }
 
+.mask {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    width: 1520px;
+    height: 600px;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.mask > a {
+    color: white;
+    opacity: 1;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+.thcontainer {
+    background-color: #1C1C1C;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thcard1 {
+    background-image: url("../images/Dados.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    height: 200px;
+    width: 350px;
+    color: #fff;
+}
+
+.thcard1 > p {
+    position: relative;
+    margin: 10px;
+    top: 140px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.thcard2 {
+    background-image: url("../images/Joias_e_Acessorios.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    height: 200px;
+    width: 350px;
+    color: #fff;
+    margin: 106px;
+}
+
+.thcard2 > p {
+    position: relative;
+    margin: 10px;
+    top: 140px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.thcard3 {
+    background-image: url("../images/Caixas_e_Acessorios.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    height: 200px;
+    width: 350px;
+    color: #fff;
+}
+
+.thcard3 > p {
+    position: relative;
+    margin: 10px;
+    top: 140px;
+    font-weight: bold;
+    font-size: large;
+}
