@@ -9,6 +9,9 @@ function MidHome() {
         <div className={styles.mhtext}>
             <h1>Last Releases</h1>
         </div>
+        <div className={styles.mhlinha}>
+          <p> </p>
+        </div>
         <div className={styles.mhcontainer}>
             <Card />
             <Card />

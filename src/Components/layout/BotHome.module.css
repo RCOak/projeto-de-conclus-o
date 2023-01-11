@@ -6,13 +6,49 @@
     display: flex;
     justify-content: center;
     margin: auto;
-    text-decoration: underline;
     padding-top: 47px;
-    padding-bottom: 47px;
     color: #E5E9EC;
 }
 
 .bhvideo {
     display: grid;
     place-items: center;
+}
+
+.bhbtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    align-content: center;
+}
+
+.bhbtn > button {
+    width: 398px;
+    height: 57px;
+    border: 3px solid #E5E9EC;
+    background-color: #1C1C1C;
+    font-size: larger;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: #E5E9EC;
+}
+
+.bhbtn > button {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.bhlinha {
+    height: 2px;
+    width: 1450px;
+    background-color:  #D3312B;
+    margin: auto;
+}
+
+.bhlinha1 {
+    height: 2px;
+    width: 400px;
+    background-color:  #D3312B;
+    margin: auto;
+    margin-bottom: 47px;
 }
