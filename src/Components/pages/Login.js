@@ -1,5 +1,14 @@
+import React from "react";
+
+import LoginPage from "../layout/LoginPage.jsx";
+
+
 function Login() {
-    return <h1>Login</h1>
+    return (
+    <div>
+        <LoginPage />
+    </div>
+    )
 }
 
-export default Login
+export default Login;

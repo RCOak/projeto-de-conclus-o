@@ -1,0 +1,134 @@
+.loginbody {
+    background-image: url("../images/BG_LoginCadastro.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    width: 1520px;
+    height: 700px;
+    display: grid;
+    place-items: center;
+}
+
+.loginmask {
+    width: 1520px;
+    height: 700px;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.crtaccbox {
+    position: absolute;
+    background-color: #1C1C1C;
+    width: 420px;
+    height: 600px;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+}
+
+.loginlogo {
+    position: relative;
+    top: 20%;
+}
+
+.logintext {
+    color: #EFEFEF;
+    text-align: center;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.createlgforms {
+    display: grid;
+    gap: 16px;
+    margin: 0px;
+}
+
+.crtaccname, .crtaccpass, .crtaccmail {
+    width: 100%;
+    position: relative;
+}
+
+.crtaccname span, .crtaccpass span, .crtaccmail span {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    translate: 0 -50%;
+}
+
+.crtaccname span img, .crtaccpass span img, .crtaccmail span img {
+    height: 30px;
+}
+
+.createlgforms input {
+    width: 280px;
+    height: 50px;
+    outline: none;
+    font-family: inherit;
+    font-size: 16px;
+    border-radius: 10px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    padding: 0 20px 0 65px;
+    color: #C7C8C9;
+    margin: 0px;
+}
+
+.createlgforms input:focus {
+    border-color: #d3312bff;
+}
+
+.crtacccheckbox {
+    color: #BDBDBD;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.crtacccheckbox input {
+    width: 15px;
+    height: 15px;
+    margin-top: 15px;
+}
+
+.crtacccheckbox p {
+    margin: 10px;
+}
+
+.backlgbtn {
+    border: 2px solid #B1B1B1;
+    border-radius: 10px;
+    width: 121px;
+    height: 35px;
+    color: #B1B1B1;
+    background-color: transparent;
+    font-weight: bolder;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.backlgbtn a {
+    color: #B1B1B1;
+    text-decoration: none;
+}
+
+.createaccbtn {
+    width: 200px;
+    height: 35px;
+    border-radius: 10px;
+    color: #1E1E1E;
+    font-weight: bolder;
+    margin: 10px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    background-image: linear-gradient(#B1B1B1, #FFFFFF);
+}
+
+.backlgbtn li:hover {
+    border: 2px solid #d3312bff;
+}
+.createaccbtn li:hover {
+    background-image: linear-gradient(rgb(145, 33, 29), #d3312bff);
+}
+

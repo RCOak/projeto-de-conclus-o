@@ -1,13 +1,13 @@
 import React from 'react'
 
 import styles from './CardBlog.module.css'
-
+import heroes_feast_featured from '../images/heroes_feast_featured.jpg'
 
 function CardBlog() {
   return(
     <div className={styles.cardblog}>
         <div className={styles.cbimg}>
-            <img src='https://cdn.discordapp.com/attachments/596820253984555164/1057348502994292886/heroes-feast-featured.jpg' alt='heroes feast'></img>
+            <img src={heroes_feast_featured} alt='heroes feast'></img>
         </div>
         <div className={styles.cbtext}>
             <h3>Take a Bite at the Feast of Heroes</h3>

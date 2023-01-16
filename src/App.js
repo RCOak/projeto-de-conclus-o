@@ -4,6 +4,7 @@ import React from "react";
 import Home from "./Components/pages/Home.js";
 import Login from "./Components/pages/Login.js";
 import Cart from "./Components/pages/Cart.js";
+import LoginCreate from "./Components/pages/LoginCreate.js"
 
 import Container from "./Components/layout/Container.js";
 import Navbar from "./Components/layout/Navbar.jsx"
@@ -18,6 +19,7 @@ function App() {
             <Routes>
               <Route exact path='/' element={<Home />} />
               <Route exact path='/login' element={<Login />} />
+              <Route exact path='/logincreate' element={<LoginCreate />} />
               <Route exact path='/cart' element={<Cart />} />
             </Routes>
           </Container>
