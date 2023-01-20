@@ -15,7 +15,7 @@
 }
 
 .item {
-    margin-right: 70px;
+    margin-right: 60px;
     color: #fff;
     font-size: medium;
     display: flex;
@@ -24,7 +24,7 @@
 
 .itemb {
     position: relative;
-    left: 635px;    
+    padding-left: 650px;    
     color: #222 ;
     font-size: x-large;
     align-items: center;
@@ -65,24 +65,29 @@
     padding: 0px 3px 0px 3px;
     border: 3px solid #73231dff;
     border-radius: 50%;
-    font-size: x-large;
+    font-size: xx-large;
     
 }
 
 .cart {
-    font-size: x-large;
+    font-size: xx-large;
 }
 
 .menu {
     color: #fff;
-    font-size: xx-large;
+}
+
+.menu:hover {
+    cursor: pointer;
 }
 
 .menuicons {
     display: flex;
     align-items: center;
-    position: absolute;
-    right: 75px;
+    justify-self: right;
+    justify-content: space-between;
+    float: right;
+    padding-right: 50px;
 }
 
 .logo {
@@ -98,3 +103,30 @@
     max-width: 50px;
 }
 
+.itemmenu {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .itemmenu_content {
+    right: 0;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    background-image: linear-gradient(#d3312b, #72231d, #1c1c1c);
+    border-radius: 10px;
+  }
+  
+  .itemmenu_content a {
+  color: #fefdfd;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+  .itemmenu:hover .itemmenu_content {
+    display: block;
+  }

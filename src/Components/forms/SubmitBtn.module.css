@@ -1,0 +1,15 @@
+.submitbutton {
+    width: 123px;
+    height: 35px;
+    border-radius: 10px;
+    color: #1E1E1E;
+    font-weight: bolder;
+    margin: 10px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    background-image: linear-gradient(#B1B1B1, #FFFFFF);
+}
+
+.submitbutton:hover {
+    background-image: linear-gradient(rgb(145, 33, 29), #d3312bff);
+}

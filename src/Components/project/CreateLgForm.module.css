@@ -1,0 +1,31 @@
+.loginforms {
+    display: grid;
+    gap: 16px;
+    margin: 0px;
+}
+
+.backlgbtn2 {
+    border: 2px solid #B1B1B1;
+    border-radius: 10px;
+    width: 123px;
+    height: 35px;
+    color: #B1B1B1;
+    background-color: transparent;
+    font-weight: bolder;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.backlgbtn2 a {
+    color: #B1B1B1;
+    text-decoration: none;
+}
+
+.backlgbtn2:hover {
+    border: 2px solid #d3312bff;
+}
+
+.btns {
+    display: flex;
+    margin-top: 10px;
+}

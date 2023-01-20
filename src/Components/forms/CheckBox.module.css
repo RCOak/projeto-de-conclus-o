@@ -1,0 +1,16 @@
+.checkbox {
+    color: #BDBDBD;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.checkbox input {
+    width: 15px;
+    height: 15px;
+    margin-top: 15px;
+}
+
+.checkbox p {
+    margin: 10px;
+}

@@ -1,0 +1,36 @@
+.loginforms {
+    display: grid;
+    gap: 16px;
+    margin: 0px;
+}
+
+.dhabtn {
+    border: 2px solid #B1B1B1;
+    border-radius: 10px;
+    width: 202px;
+    height: 35px;
+    color: #B1B1B1;
+    background-color: transparent;
+    font-weight: bolder;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.dhabtn a {
+    color: #B1B1B1;
+    text-decoration: none;
+}
+
+.dhabtn:hover {
+    border: 2px solid #d3312bff;
+}
+
+.forgotpass a {
+    color: #BDBDBD;
+    margin-bottom: 20px;
+}
+
+.btns {
+    display: flex;
+    margin-top: 10px;
+}

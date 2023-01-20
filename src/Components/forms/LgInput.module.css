@@ -1,0 +1,33 @@
+.form_control {
+    width: 100%;
+    position: relative;
+}
+
+.form_control span {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    translate: 0 -50%;
+}
+
+.form_control span img {
+    height: 30px;
+}
+
+.form_control input {
+    width: 280px;
+    height: 50px;
+    outline: none;
+    font-family: inherit;
+    font-size: 16px;
+    border-radius: 10px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    padding: 0 20px 0 65px;
+    color: #C7C8C9;
+    margin: 0px;
+}
+
+.form_control input:focus {
+    border-color: #d3312bff;
+}

@@ -1,26 +1,27 @@
 import React from 'react'
 
-import "./CreateLogin.css"
-import LogoFooter from '../images/LogoFooter.png'
-import CreateLgForm from '../project/CreateLgForm.jsx'
 
-function CreateLogin({ btnText }) {
+import "./LoginPage.css"
+import LogoFooter from '../images/LogoFooter.png'
+import LoginForm from '../project/LoginForm.jsx'
+
+function LoginAdmin({btnText}) {
   return(
     <div className='loginbody'>
         <div className='loginmask'>
         </div>
-        <div className='crtaccbox'>
+        <div className='loginbox'>
             <div className='loginlogo'>
               <img src={LogoFooter} alt='logo' />
             </div>  
             <div className='logintext'>
-              <h1>Let's make your account</h1>
-              <p>Enter your data and confirm your data and roll your attributes!</p>
+              <h1>Welcome back</h1>
+              <p>Enter your data and roll initiative!</p>
             </div>
-            <CreateLgForm btnText={"CONTINUE"}/>
+            <LoginForm btnText="ENTER"/>
         </div>
     </div>
   )
 }
 
-export default CreateLogin
+export default LoginAdmin

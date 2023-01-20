@@ -4,6 +4,7 @@ import Container from './Container.js'
 
 import styles from './Navbar.module.css'
 import LogoDV from '../images/LogoDV.png'
+import MenuDado from '../icons/MenuDado.svg'
 
 import { BsFillPersonFill, BsBag, BsList, BsFillGeoAltFill, BsFillTelephoneFill, BsEnvelopeFill, BsSearch } from "react-icons/bs";
 
@@ -40,9 +41,21 @@ function Navbar() {
                 <p className={styles.item}>
                   <Link to='/Cart'><p className={styles.cart}><BsBag /></p></Link>
                 </p>
-                <p className={styles.item}>
-                  <p className={styles.menu}><BsList /></p>
-                </p>           
+                <div className={styles.itemmenu}>
+                  <img className={styles.menu} src={MenuDado} alt='' />
+                  <div className={styles.itemmenu_content}>
+                    <a href="#">DICES</a>
+                    <br></br>
+                    <br></br>
+                    <a href="#">ACCESSORIES</a>
+                    <br></br>
+                    <br></br>
+                    <a href="#">BOXES AND BAGS</a>
+                    <br></br>
+                    <br></br>
+                    <a href="#">ADVENTURER'S JOURNAL</a>
+                  </div>
+                </div>           
               </div>
             </Container>          
           </nav>
