@@ -1,5 +1,6 @@
 import React from "react";
 
+import CreateProduct from "../layout/CreateProduct.jsx";
 
 function NewProduct() {
     return (
