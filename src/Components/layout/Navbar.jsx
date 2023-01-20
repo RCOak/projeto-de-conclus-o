@@ -6,7 +6,7 @@ import styles from './Navbar.module.css'
 import LogoDV from '../images/LogoDV.png'
 import MenuDado from '../icons/MenuDado.svg'
 
-import { BsFillPersonFill, BsBag, BsList, BsFillGeoAltFill, BsFillTelephoneFill, BsEnvelopeFill, BsSearch } from "react-icons/bs";
+import { BsFillPersonFill, BsBag, BsFillGeoAltFill, BsFillTelephoneFill, BsEnvelopeFill, BsSearch } from "react-icons/bs";
 
 function Navbar() {
   return(

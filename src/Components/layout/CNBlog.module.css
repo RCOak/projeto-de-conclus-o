@@ -17,17 +17,16 @@
     opacity: 0.5;
 }
 
-.cnpbox {
+.cnblogbox {
     position: absolute;
     background-color: #1C1C1C;
-    width: 700px;
+    width: 1200px;
     height: 600px;
     border-radius: 10px;
     display: grid;
     place-items: center;
 }
 
-.cnpbox h1 {
-    font-weight: bold;
+.cnblogtext {
     color: #C7C8C9;
-    }
+}

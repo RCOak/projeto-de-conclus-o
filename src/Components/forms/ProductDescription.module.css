@@ -1,0 +1,38 @@
+.descriptionform_control {
+    width: 100%;
+    position: relative;
+}
+
+.descriptionform_control span {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    translate: 0 -50%;
+}
+
+.descriptionform_control span img {
+    height: 30px;
+}
+
+.descriptionform_control label {
+    color: #7e7e7e;
+}
+
+.descriptionform_control input {
+    width: 480px;
+    height: 50px;
+    outline: none;
+    font-family: inherit;
+    font-size: 16px;
+    border-radius: 10px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    padding: 0 80px 50px 10px;
+    color: #C7C8C9;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+.descriptionform_control input:focus {
+    border-color: #d3312bff;
+}

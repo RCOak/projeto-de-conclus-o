@@ -13,7 +13,7 @@ function LoginForm({ btnText }) {
                   <LgInput type="text" name='loginUser' placeholder='Enter Username or e-mail' icon={BsFillPersonFill} />
                   <LgInput type="password" name='loginPass' placeholder='Enter your password' icon={BsLock} />
                 <div className={styles.forgotpass}>
-                  <a href="">I forgot my password</a>
+                  <a href="#">I forgot my password</a>
                 </div>
             </form>
             <div className={styles.btns}>

@@ -1,17 +1,18 @@
 import React from 'react'
 
-import "./CreateLogin.css"
-import LogoFooter from '../images/LogoFooter.png'
+import styles from './CreateProduct.module.css'
+import CreateProductForm from '../project/CreateProductForm.jsx'
 
 function CreateProduct() {
   return(
-    <div className='loginbody'>
-        <div className='loginmask'>
+    <div className={styles.loginbody}>
+        <div className={styles.loginmask}>
         </div>
-        <div className='crtaccbox'>
-            <div className='loginlogo'>
-              <img src={LogoFooter} alt='logo' />
-            </div>
+        <div className={styles.cnpbox}>
+            <h1>
+              Create a new product
+            </h1>
+          <CreateProductForm btnText="Submit" />
         </div>
     </div>
   )

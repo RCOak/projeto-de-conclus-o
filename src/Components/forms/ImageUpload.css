@@ -1,0 +1,18 @@
+.imageform_control {
+    border-radius: 10px;
+    padding: 5px 27px;
+    color: #1E1E1E;
+    font-weight: bolder;
+    margin: 10px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    background-image: linear-gradient(#B1B1B1, #FFFFFF);
+}
+
+#picture__input {
+    display: none;    
+}
+
+.imageform_control:hover {
+    background-image: linear-gradient(rgb(145, 33, 29), #d3312bff);
+}
