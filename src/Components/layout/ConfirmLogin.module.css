@@ -1,0 +1,65 @@
+.loginbody {
+    background-image: url("../images/BG_LoginCadastro.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    width: 1520px;
+    height: 700px;
+    display: grid;
+    place-items: center;
+}
+
+.loginmask {
+    width: 1520px;
+    height: 700px;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.clbox {
+    position: absolute;
+    background-color: #1C1C1C;
+    width: 500px;
+    height: 400px;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+}
+
+.clbox button {
+    margin-bottom: 30px;
+    border: 2px solid #B1B1B1;
+    border-radius: 10px;
+    width: 202px;
+    height: 35px;
+    color: #B1B1B1;
+    background-color: transparent;
+    font-weight: bolder;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.clbox button a {
+    color: #B1B1B1;
+    text-decoration: none;
+}
+
+.clbox button:hover {
+    border: 2px solid #d3312bff;
+}
+
+.cllogo {
+    position: relative;
+    top: 20%;
+}
+
+.cltext {
+    color: #EFEFEF;
+    text-align: center;
+    padding: 0 40px 0 40px;
+    margin: 0px 40px 0px 40px;
+    
+}
+
+
