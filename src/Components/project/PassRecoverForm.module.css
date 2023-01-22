@@ -5,6 +5,10 @@
     place-items: center;
 }
 
+.prform input {
+    margin-left: 38px;
+}
+
 .btns {
     display: flex;
     margin-top: 10px;

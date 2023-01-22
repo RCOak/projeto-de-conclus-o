@@ -9,6 +9,7 @@ import PassRecover from "./Components/pages/PassRecover.js"
 import NewProduct from "./Components/pages/NewProduct.js"
 import NewBlog from "./Components/pages/NewBlog.js";
 import LoginConfirm from "./Components/pages/LoginConfirm.js"
+import LoginUser from "./Components/pages/LoginUser.js";
 
 import Container from "./Components/layout/Container.js";
 import Navbar from "./Components/layout/Navbar.jsx"
@@ -26,6 +27,7 @@ function App() {
               <Route exact path='/logincreate' element={<LoginCreate />} />
               <Route exact path='/loginconfirm' element={<LoginConfirm />} />
               <Route exact path='/passrecover' element={<PassRecover />} />
+              <Route exact path='/loginuser' element={<LoginUser />} />
               <Route exact path='/nwproduct' element={<NewProduct />} />
               <Route exact path='/nwblog' element={<NewBlog />} />
               <Route exact path='/cart' element={<Cart />} />
