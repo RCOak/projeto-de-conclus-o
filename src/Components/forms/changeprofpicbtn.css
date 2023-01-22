@@ -1,0 +1,28 @@
+#cppinsert {
+    display: none;
+  }
+  
+.cppbox {
+    width: 40px;
+    height: 40px;
+    background-color: #171A18;
+    box-shadow: #171A18;
+    border-radius: 50%;
+}
+
+.cppbtn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.cppicon {
+    color: #d3312b;
+    font-size: x-large;
+}
+
+  

@@ -1,0 +1,11 @@
+.uppcircle {
+    border: 3px solid #8E0014;
+    border-radius: 50%;
+    width: 178px;
+    height: 178px;
+    overflow: hidden;
+}
+
+.uppcircle img {
+    width: 100%;
+  }

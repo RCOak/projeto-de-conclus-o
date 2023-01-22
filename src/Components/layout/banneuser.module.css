@@ -1,3 +1,24 @@
 .bubox {
-    
+    background-image: url("../images/BUImg.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1520px;
+    height: 365px;
 }
+
+.mask {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    width: 1520px;
+    height: 365px;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.bucontent {
+    position: relative;
+    bottom: 350px;
+}
+
