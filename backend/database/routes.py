@@ -82,7 +82,6 @@ def register_user():
     
     db.session.add(new_user)
     db.session.commit()
-    db.session.remove()
 
     return serializers.user_schema.jsonify(new_user), 201
 
