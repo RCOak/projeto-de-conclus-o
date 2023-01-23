@@ -1,0 +1,40 @@
+.menuuserbox {
+    width: 1520px;
+    height: 250px;
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+}
+
+.mucard1 {
+    background-image: url("../images/MyOrders.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    height: 200px;
+    width: 350px;
+    color: #fff;
+}
+
+.mucard2 {
+    background-image: url("../images/Wallet.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    height: 200px;
+    width: 350px;
+    color: #fff;
+    margin: 106px;
+}
+
+.mucard3 {
+    background-image: url("../images/Wishlist.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    height: 200px;
+    width: 350px;
+    color: #fff;
+}

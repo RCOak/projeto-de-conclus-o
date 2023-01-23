@@ -1,0 +1,16 @@
+.menucard {
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    height: 200px;
+    width: 350px;
+    color: #fff;
+}
+
+.menucard > p {
+    position: relative;
+    margin: 10px;
+    top: 140px;
+    font-weight: bold;
+    font-size: large;
+}
