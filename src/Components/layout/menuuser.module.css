@@ -9,7 +9,7 @@
 }
 
 .mucard1 {
-    background-image: url("../images/MyOrders.png");
+    background-image: url("../images/MyProfile.png");
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -19,7 +19,7 @@
 }
 
 .mucard2 {
-    background-image: url("../images/Wallet.png");
+    background-image: url("../images/MyOrders.png");
     background-position: center;
     background-size: cover;
     border-radius: 10px;

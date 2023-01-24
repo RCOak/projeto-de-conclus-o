@@ -1,0 +1,48 @@
+.uiformbox {
+    padding-top: 30px;
+    width: 1520px;
+    height: 400px;
+}
+
+.userinfform {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.userinfform1{
+    display: flex;
+    position: absolute;
+    left: 320px;
+    top: 140px;
+    gap: 30px;
+}
+
+.userinfform2 {
+    display: flex;
+    position: absolute;
+    left: 320px;
+    top: 240px;
+    gap: 30px;
+}
+
+.userinfbtn {
+    display: flex;
+    position: absolute;
+    left: 310px;
+    top: 540px;
+}
+
+.userinfform3 {
+    display: flex;
+    gap: 45px;
+    position: absolute;
+    top: 340px;
+}
+
+.userinfform4 {
+    display: flex;
+    gap: 45px;
+    position: absolute;
+    top: 440px;
+}
