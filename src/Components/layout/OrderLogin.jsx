@@ -16,6 +16,8 @@ function OrderLogin() {
         <div className={styles.orderbox}>
             <OrderInfoHeader />
             <MyOrderCard />
+            <br />
+            <MyOrderCard />
         </div>
       </div>
     </div>
