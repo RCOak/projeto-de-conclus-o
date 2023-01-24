@@ -1,0 +1,13 @@
+.olbox {
+    width: 1520px;
+    height: 1097px;
+}
+
+.orderbox {
+    width: 100%;
+    height: 78%;
+    background-color: #e5e9ec;
+    position: relative;
+    top: 250px;
+    
+}

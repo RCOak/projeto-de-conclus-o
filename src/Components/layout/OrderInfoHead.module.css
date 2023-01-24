@@ -1,0 +1,34 @@
+.oihtext h1 {
+    font-weight: bolder;
+    display: flex;
+    position: absolute;
+    top: 30px;
+    left: 400px;
+}
+
+.oihtext p {
+    color: #D3312B;
+    display: flex;
+    position: absolute;
+    top: 80px;
+    left: 397px;
+}
+
+.oihlinha {
+    height: 2px;
+    width: 870px;
+    background-color:  #707070;
+    margin: auto;
+    margin-bottom: 47px;
+    display: flex;
+    position: absolute;
+    top: 120px;
+    left: 322px;
+}
+
+.swordfig img {
+    display: flex;
+    position: absolute;
+    top: 38px;
+    left: 320px;
+}

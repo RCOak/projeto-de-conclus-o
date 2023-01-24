@@ -1,0 +1,140 @@
+.mocardbox {
+    border-radius: 15px;
+    width: 870px;
+    height: 245px;
+    background-color: #fafafa;
+    position: absolute;
+    top: 150px;
+    left: 320px;
+}
+
+.oclinha {
+    height: 1px;
+    width: 830px;
+    background-color:  #707070;
+    margin: auto;
+    margin-bottom: 47px;
+    display: flex;
+    position: absolute;
+    top: 65px;
+    left: 20px;
+}
+
+.octext1 {
+    position: absolute;
+    left: 20px;
+    top: 15px
+}
+
+.octext1 h3 {
+    font-size: medium;
+    margin: 0;
+}
+
+.octext1 p {
+    color: #D3312B;
+    font-size: small;
+    margin: 0;
+}
+
+.octext2 {
+    position: absolute;
+    left: 200px;
+    top: 15px
+}
+
+.octext2 h3 {
+    font-size: medium;
+    margin: 0;
+}
+
+.octext2 p {
+    color: #D3312B;
+    font-size: small;
+    margin: 0;
+}
+
+.octext3 {
+    position: absolute;
+    left: 300px;
+    top: 15px
+}
+
+.octext3 h3 {
+    font-size: medium;
+    margin: 0;
+}
+
+.octext3 p {
+    color: #D3312B;
+    font-size: small;
+    margin: 0;
+}
+
+.octext4 {
+    position: absolute;
+    left: 750px;
+    top: 15px
+}
+
+.octext4 h3 {
+    font-size: medium;
+    margin: 0;
+}
+
+.octext4 p {
+    color: #D3312B;
+    font-size: small;
+    margin: 0;
+}
+
+.octext5 p {
+    font-size: small;
+    margin: 0;
+    position: absolute;
+    left: 200px;
+    top: 85px
+}
+
+.octext5 h2 {
+    margin: 0;
+    position: absolute;
+    left: 200px;
+    top: 105px
+}
+
+.octext5 h3 {
+    margin: 0;
+    position: absolute;
+    left: 200px;
+    top: 140px;
+    color: #D3312B;
+    font-weight: bold;
+}
+
+.octext5 button {
+    margin: 0;
+    position: absolute;
+    left: 200px;
+    top: 180px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid #707070;
+    height: 40px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.octext5 button:hover {
+    border: 2px solid #D3312B;
+    color: #D3312B;
+}
+
+.ocimg img {
+    width: 175px;
+    height: 175px;
+    position: absolute;
+    top: 70px;
+    overflow: hidden;
+    border-radius: 10px;
+}
