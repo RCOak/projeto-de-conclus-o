@@ -3,8 +3,12 @@ import React from 'react'
 import "./CreateLogin.css"
 import LogoFooter from '../images/LogoFooter.png'
 import CreateLgForm from '../project/CreateLgForm.jsx'
+import { useState } from 'react'
 
-function CreateLogin({ btnText }) {
+function CreateLogin({ btnText, hSubmit, userData }) {
+  
+  const [user, setUser] = useState(userData || {})
+  
   return(
     <div className='loginbody'>
         <div className='loginmask'>
@@ -17,7 +21,7 @@ function CreateLogin({ btnText }) {
               <h1>Let's make your account</h1>
               <p>Enter your data and confirm your data and roll your attributes!</p>
             </div>
-            <CreateLgForm btnText={"CONTINUE"}/>
+            <CreateLgForm handleSubmit={hSubmit} btnText={"CONTINUE"}/>
         </div>
     </div>
   )
