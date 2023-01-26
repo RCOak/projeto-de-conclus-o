@@ -1,0 +1,22 @@
+.manageproductbox {
+    width: 1520px;
+    height: 1300px;
+    background-color: #E5E9EC;
+}
+
+.manageproductbtn {
+    position: absolute;
+    top: 850px;
+    left: 950px;
+}
+
+.manageproductcard {
+    display: grid;
+    place-items: center;
+    width: 820px;
+    height: 700px;
+    position: absolute;
+    top: 800px;
+    left: 0px;
+    gap: 20px;
+}

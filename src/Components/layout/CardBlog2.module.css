@@ -1,0 +1,40 @@
+.cardblog2 {
+    width: 800px;
+    height: 147px;
+    border: 1px solid #FF0000;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-top: 57px;
+    cursor: pointer;
+}
+
+.cb2img {
+    height: 149px;
+    width: auto;
+}
+
+.cb2img > img {
+    float: left;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.cb2text {
+    color: #1C1C1C;
+    padding: 0px 10px 0px 10px;
+    position: relative;
+    top: 20px;
+}
+
+.cb2text > h3, p {
+    margin: 5px;
+}
+
+.cb2btn {
+    position: relative;
+    left: 410px;
+    top: -20px;
+}

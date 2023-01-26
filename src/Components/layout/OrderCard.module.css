@@ -1,0 +1,101 @@
+.aocardbox {
+    border-radius: 15px;
+    width: 870px;
+    height: 180px;
+    background-color: #fafafa;
+    position: relative;
+    top: 150px;
+    left: 320px;
+}
+
+.aoctext {
+    position: absolute;
+    left: 180px;
+    top: 20px
+}
+
+.aoctext h1 {
+    position: absolute;
+    top: 10px;
+    font-size: x-large;
+    width: 450px;
+}
+
+.aoctext p {
+    color: #D3312B;
+    font-size: small;
+    margin: 0;
+}
+
+.aoctext2 {
+    position: absolute;
+    top: 40px
+}
+
+.aoctext2 h2 {
+    font-size: x-large;
+    margin: 0;
+    position: absolute;
+    left: 0px;
+    top: 22px
+}
+
+.aoctext2 h3 {
+    font-size: large;
+    font-weight: lighter;
+    margin: 0;
+    position: absolute;
+    left: 80px;
+    top: 27px
+}
+
+.aoctext3 h2 {
+    position: absolute;
+    left: 0px;
+    top: 75px
+}
+
+.aoctext3 h3 {
+    position: absolute;
+    font-weight: lighter;
+    left: 80px;
+    top: 82px
+}
+
+.aocimg img {
+    width: 175px;
+    height: 175px;
+    position: absolute;
+    top: 0px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.aocbtns {
+    display: flex;
+    position: absolute;
+    left: 450px;
+    top: 95px;
+}
+
+.aocbtnsicon {
+    cursor: pointer;
+    position: absolute;
+    left: 160px;
+    top: 17px;
+}
+
+.aocbtnsicon2 {
+    cursor: pointer;
+    position: absolute;
+    left: 200px;
+    top: 17px;
+}
+
+.aocbtnsicon:hover {
+    color: #D3312B;
+}
+
+.aocbtnsicon2:hover {
+    color: #D3312B;
+}

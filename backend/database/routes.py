@@ -1,6 +1,5 @@
-from database import app, ma, db, bcrypt, models, serializers, mail, Session
+from database import app, ma, db, bcrypt, models, serializers, Session
 from flask import jsonify, request
-from flask_mail import Message
 
 @app.route("/")
 @app.route("/home")
@@ -10,26 +9,22 @@ def index():
 @app.route('/get_item/<id>', methods = ['GET'])
 def get_item(id):
     item = models.Item.query.get(id)
-    item.headers.add('Access-Control-Allow-Origin', '*')
     return serializers.item_schema.jsonify(item), 200
 
 @app.route('/get_itens_by_category/<category>', methods = ['GET'])
 def get_itens_by_category(category):
     items = models.Item.query.filter_by(category=category).all()
-    items.headers.add('Access-Control-Allow-Origin', '*')
     return serializers.items_schema.jsonify(items), 200
 
 @app.route('/get_itens_by_tag/<tag>', methods = ['GET'])
 def get_itens_by_tag(tag):
     items = models.Item.query.filter_by(tag=tag).all()
-    items.headers.add('Access-Control-Allow-Origin', '*')
     return serializers.items_schema.jsonify(items), 200
 
 @app.route('/get_all_itens', methods = ['GET'])
 def get_itens():
     all_itens = models.Item.query.all()
     results = serializers.items_schema.dump(all_itens)
-    all_itens.headers.add('Access-Control-Allow-Origin', '*')
     return jsonify(results), 200
 
 @app.route('/add_item', methods = ['POST'])
@@ -46,7 +41,6 @@ def add_item():
     models.Session.add(new_item)
     models.Session.commit()
     
-    new_item.headers.add('Access-Control-Allow-Origin', '*')
     return serializers.item_schema.jsonify(new_item), 201
 
 @app.route('/update_item/<id>', methods = ['PUT'])
@@ -72,7 +66,6 @@ def update_item(id):
 
     models.Session.commit()
     
-    item.headers.add('Access-Control-Allow-Origin', '*')
     return serializers.item_schema.jsonify(item), 201
 
 @app.route('/delete_item/<id>', methods = ['DELETE'])
@@ -81,7 +74,6 @@ def delete_item(id):
     models.Session.delete(item)
     models.Session.commit()
     
-    item.headers.add('Access-Control-Allow-Origin', '*')
     return serializers.item_schema.jsonify(item)
 
 @app.route('/register', methods = ['POST'])
@@ -110,7 +102,6 @@ def register_user():
     msg.body = "Thanks for signing up!"
     mail.send(msg)
     
-    new_user.headers.add('Access-Control-Allow-Origin', '*')
     return serializers.user_schema.jsonify(new_user), 201
 
 @app.route('/get_user/<id>', methods = ['GET'])
@@ -122,7 +113,7 @@ def get_user(id):
 def get_users():
     all_users = models.User.query.all()
     results = serializers.users_schema.dump(all_users)
-    all_users.headers.add('Access-Control-Allow-Origin', '*')
+
     return jsonify(results), 200
 
 @app.route('/update_user/<id>', methods = ['PUT'])
@@ -151,7 +142,6 @@ def update_user(id):
 
     models.Session.commit()
     
-    user.headers.add('Access-Control-Allow-Origin', '*')
     return serializers.user_schema.jsonify(user), 201
 
 @app.route('/update_user_budget/<id>', methods = ['PUT'])
@@ -161,7 +151,6 @@ def update_user_budget(id):
     user.budget=budget
     models.Session.commit()
     
-    user.headers.add('Access-Control-Allow-Origin', '*')
     return serializers.user_schema.jsonify(user), 201
 
 @app.route('/delete_user/<id>', methods = ['DELETE'])
@@ -170,7 +159,6 @@ def delete_user(id):
     models.Session.delete(user)
     models.Session.commit()
     
-    user.headers.add('Access-Control-Allow-Origin', '*')
     return serializers.user_schema.jsonify(user)
 
 @app.route('/send_email', methods = ['POST'])

@@ -1,0 +1,40 @@
+.menuadmbox {
+    width: 1520px;
+    height: 250px;
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+}
+
+.macard1 {
+    background-image: url("../images/MenageBlog.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    height: 200px;
+    width: 350px;
+    color: #fff;
+}
+
+.macard2 {
+    background-image: url("../images/MenageProduct.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    height: 200px;
+    width: 350px;
+    color: #fff;
+    margin: 106px;
+}
+
+.macard3 {
+    background-image: url("../images/OrderHistory.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    height: 200px;
+    width: 350px;
+    color: #fff;
+}

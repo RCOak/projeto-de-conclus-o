@@ -1,0 +1,34 @@
+.aihtext h1 {
+    font-weight: bolder;
+    display: flex;
+    position: absolute;
+    top: 820px;
+    left: 400px;
+}
+
+.aihtext p {
+    color: #D3312B;
+    display: flex;
+    position: absolute;
+    top: 880px;
+    left: 397px;
+}
+
+.aihlinha {
+    height: 2px;
+    width: 870px;
+    background-color:  #707070;
+    margin: auto;
+    margin-bottom: 47px;
+    display: flex;
+    position: absolute;
+    top: 915px;
+    left: 322px;
+}
+
+.scrollfig img {
+    display: flex;
+    position: absolute;
+    top: 850px;
+    left: 330px;
+}

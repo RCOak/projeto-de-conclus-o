@@ -1,0 +1,21 @@
+.manageblogbox {
+    width: 1520px;
+    height: 1100px;
+    background-color: #E5E9EC;
+}
+
+.manageblogbtn {
+    position: absolute;
+    top: 850px;
+    left: 950px;
+}
+
+.manageblogcard {
+    display: grid;
+    place-items: center;
+    width: 820px;
+    height: 600px;
+    position: absolute;
+    top: 900px;
+    left: 350px;
+}

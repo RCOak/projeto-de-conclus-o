@@ -1,0 +1,122 @@
+.ordercardbox {
+    border-radius: 15px;
+    width: 870px;
+    height: 245px;
+    background-color: #fafafa;
+    position: relative;
+    top: 150px;
+    left: 320px;
+}
+
+.oclinha {
+    height: 1px;
+    width: 830px;
+    background-color:  #707070;
+    margin: auto;
+    margin-bottom: 47px;
+    display: flex;
+    position: absolute;
+    top: 65px;
+    left: 20px;
+}
+
+.ordercardtext1 {
+    position: absolute;
+    left: 20px;
+    top: 15px
+}
+
+.ordercardtext1 h3 {
+    font-size: medium;
+    margin: 0;
+}
+
+.ordercardtext1 p {
+    color: #D3312B;
+    font-size: small;
+    margin: 0;
+}
+
+.ordercardtext2 {
+    position: absolute;
+    left: 200px;
+    top: 15px
+}
+
+.ordercardtext2 h3 {
+    font-size: medium;
+    margin: 0;
+}
+
+.ordercardtext2 p {
+    color: #D3312B;
+    font-size: small;
+    margin: 0;
+}
+
+.ordercardtext3 {
+    position: absolute;
+    left: 300px;
+    top: 15px
+}
+
+.ordercardtext3 h3 {
+    font-size: medium;
+    margin: 0;
+}
+
+.ordercardtext3 p {
+    color: #D3312B;
+    font-size: small;
+    margin: 0;
+}
+
+.ordercardtext4 {
+    position: absolute;
+    left: 750px;
+    top: 15px
+}
+
+.ordercardtext4 h3 {
+    font-size: medium;
+    margin: 0;
+}
+
+.ordercardtext4 p {
+    color: #D3312B;
+    font-size: small;
+    margin: 0;
+}
+
+.ordercardtext5 p {
+    font-size: small;
+    margin: 0;
+    position: absolute;
+    left: 200px;
+    top: 100px
+}
+
+.ordercardtext5 h2 {
+    margin: 0;
+    position: absolute;
+    left: 200px;
+    top: 125px
+}
+
+.ordercardtext5 h3 {
+    margin: 0;
+    position: absolute;
+    left: 200px;
+    top: 165px;
+    color: #D3312B;
+    font-weight: bold;
+}
+
+.ordercardimg img {
+    width: 175px;
+    height: 175px;
+    position: absolute;
+    top: 70px;
+    overflow: hidden;
+    border-radius: 10px;
+}

@@ -8,7 +8,8 @@ function TopHome() {
     <div>
       <div className={styles.tophome}>
           <div className={styles.mask}>
-            <a href=''>
+          </div>
+          <a href=''>
               <h3>
                 Dragon of Multiverse
               </h3>
@@ -19,7 +20,6 @@ function TopHome() {
                 See More
               </h2>
             </a>
-          </div>
       </div>
       <div className={styles.thcontainer}>
         <div className={styles.thcard1}>

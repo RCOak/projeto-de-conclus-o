@@ -1,0 +1,44 @@
+.capfbox{
+    border-radius: 50%;
+    width: 198px;
+    height: 198px;
+    margin: auto;
+}
+
+.capbset {
+    position: relative;
+    bottom: 40px;
+    float: right;
+    right: 20px;
+}
+
+.batext {
+    color: #e5e9ec;
+}
+
+.batext h3 {
+    white-space: nowrap;
+    font-size: 26px;
+    position: absolute;
+    top: 180px;
+    left: 630px;
+    margin: 0;
+    margin-top: 20px;
+    font-size: xx-large;
+}
+
+.batext h1 {
+    font-size: 59px;
+    margin: 0;
+    position: absolute;
+    top: 250px;
+    left: 550px;
+}
+
+.batext h2 {
+    font-size: 59px;
+    margin: 0;
+    position: absolute;
+    top: 250px;
+    left: 750px;
+}
