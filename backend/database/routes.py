@@ -1,5 +1,5 @@
 from database import app, ma, db, bcrypt, models, serializers, Session
-from flask import jsonify, request
+from flask import jsonify, request, Response
 
 @app.route("/")
 @app.route("/home")
@@ -79,12 +79,23 @@ def delete_item(id):
 @app.route('/register', methods = ['POST'])
 def register_user():
     id = None
+    print (request.json)
+    #request_dict = json.dump(request.json)
     username = request.json["username"]
     email_address = request.json["email_address"]
     password_hash = request.json["password_hash"]
-    adress = request.json["adress"]
-    postal_code = request.json["postal_code"]
-    mobile = request.json["mobile"]
+    if "adress" in request.json.keys(): 
+        adress = request.json["adress"]
+    else:
+        adress = ""
+    if "postal_code" in request.json.keys():
+        postal_code = request.json["postal_code"]
+    else:
+        postal_code = ""
+    if "mobile" in request.json.keys():
+        mobile = request.json["mobile"]
+    else:
+        mobile = ""
 
     password_hash = bcrypt.generate_password_hash(password_hash)
 
@@ -101,8 +112,11 @@ def register_user():
     msg = Message("Welcome to our site", recipients=[email_address])
     msg.body = "Thanks for signing up!"
     mail.send(msg)
+    resp = flask.Response(serializers.user_schema.jsonify(new_user))
+    resp.headers['Access-Control-Allow-Origin'] = '*'
+    return resp
     
-    return serializers.user_schema.jsonify(new_user), 201
+    #return serializers.user_schema.jsonify(new_user), 201
 
 @app.route('/get_user/<id>', methods = ['GET'])
 def get_user(id):

@@ -1,0 +1,101 @@
+.cartcardbox {
+    border-radius: 15px;
+    width: 870px;
+    height: 180px;
+    background-color: #fafafa;
+    position: relative;
+    top: 120px;
+    left: 90px;
+    margin-bottom: 20px;
+}
+
+.cartcardtext1 {
+    position: absolute;
+    left: 180px;
+    top: 20px
+}
+
+.cartcardtext1 > h1 {
+    position: absolute;
+    font-size: x-large;
+    width: 450px;
+}
+
+.cartcardtext1 > p {
+    color: #D3312B;
+    font-size: small;
+    margin: 0;
+}
+
+.cartcardtext2 {
+    position: absolute;
+    top: 40px
+}
+
+.cartcardtext2  > h2 {
+    font-size: x-large;
+    margin: 0;
+    position: absolute;
+    left: 0px;
+    top: 22px
+}
+
+.cartcardtext2 > h3 {
+    font-size: large;
+    font-weight: lighter;
+    margin: 0;
+    position: absolute;
+    left: 80px;
+    top: 27px
+}
+
+.cartcardtext3 > h2 {
+    position: absolute;
+    left: 0px;
+    top: 75px
+}
+
+.cartcardtext3 > h3 {
+    position: absolute;
+    font-weight: lighter;
+    left: 80px;
+    top: 82px
+}
+
+.cartcardimg > img {
+    width: 175px;
+    height: 175px;
+    position: absolute;
+    top: 0px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.cartcardbtns {
+    display: flex;
+    position: absolute;
+    left: 450px;
+    top: 95px;
+}
+
+.cartcardbtnsicon {
+    cursor: pointer;
+    position: absolute;
+    left: 160px;
+    top: 17px;
+}
+
+.cartcardbtnsicon2 {
+    cursor: pointer;
+    position: absolute;
+    left: 200px;
+    top: 17px;
+}
+
+.cartcardbtnsicon:hover {
+    color: #D3312B;
+}
+
+.cartcardbtnsicon2:hover {
+    color: #D3312B;
+}

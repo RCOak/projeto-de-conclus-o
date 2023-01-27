@@ -1,5 +1,14 @@
+import React from "react";
+
+import CartPage from "../layout/CartPage.jsx";
+
+
 function Cart() {
-    return <h1>Cart</h1>
+    return (
+    <div>
+        <CartPage />
+    </div>
+    )
 }
 
-export default Cart
+export default Cart;

@@ -18,6 +18,7 @@ import Container from "./Components/layout/Container.js";
 import Navbar from "./Components/layout/Navbar.jsx";
 import Footer from "./Components/layout/Footer.jsx";
 import ProductsAdm from "./Components/pages/ProductsAdm.js";
+import CatalogPage from "./Components/pages/CatalogPage.js";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
               <Route exact path='/ordersadm' element={<OrdersAdm />} />
               <Route exact path='/nwproduct' element={<NewProduct />} />
               <Route exact path='/nwblog' element={<NewBlog />} />
+              <Route exact path='/catalog' element={<CatalogPage />} />
               <Route exact path='/cart' element={<Cart />} />
             </Routes>
           </Container>

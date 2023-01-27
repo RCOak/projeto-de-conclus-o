@@ -21,8 +21,9 @@ function CreateProductForm({ btnText }) {
             <div className={styles.cpcontainer}>
               <div className={styles.cpvalue}>
                 <ValueInput type="number" name='productprice' placeholder='0.00' text="Price:" />
+                <ValueInput type="number" name='productprice' placeholder='0' text="Quantity:" />
               </div>
-              <div className={styles.cpcontainer}>
+              <div  className={styles.cpcontainer}>
                 <ImageUpload type="file" name='productimage' placeholder='funciona?' text="Product's image" />
                 <ImageUpload type="file" name='productbanner' placeholder='funciona?' text="Product's banner Image" />
               </div>

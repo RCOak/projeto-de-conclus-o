@@ -15,6 +15,7 @@ function CreateLgForm({ btnText, checktext, handleSubmit, userData }) {
   const submit = (e) => {
     e.preventDefault()
     handleSubmit(username)
+    console.log(username)
   }
 
   function handleChange(e) {

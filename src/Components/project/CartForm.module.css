@@ -1,0 +1,40 @@
+.cartformtext{
+    position: relative;
+    top: 90px;
+    left: 28px;
+
+}
+
+.cartlinha {
+    height: 2px;
+    width: 450px;
+    background-color: #c1c1c1;
+    margin: auto;
+    margin-bottom: 47px;
+    position: absolute;
+    top: 320px;
+    right: 30px;
+}
+
+.cartformtext2 {
+    position: absolute;
+    top: 250px;
+    right: 30px;
+}
+
+.cartlinha2 {
+    height: 2px;
+    width: 450px;
+    background-color: #c1c1c1;
+    margin: auto;
+    margin-bottom: 47px;
+    position: absolute;
+    top: 640px;
+    right: 30px;
+}
+
+.cartformbtn {
+    position: absolute;
+    top: 660px;
+    right: 260px;
+}

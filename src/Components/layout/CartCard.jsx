@@ -1,36 +1,36 @@
 import React from "react";
 
-import styles from "./ProductCard.module.css";
+import styles from "./CartCard.module.css";
 import dado3 from "../images/dado3.png"
 import SubmitBtn from "../forms/SubmitBtn.jsx";
 import { FaPen, FaTrashAlt } from "react-icons/fa";
 
 
 
-function ProductCard() {
+function CartCard() {
     return (
-    <div className={styles.aocardbox}>
+    <div className={styles.cartcardbox}>
         <div>
-            <div className={styles.aocimg}>
+            <div className={styles.cartcardimg}>
                 <img src={dado3} alt="dado"/>
             </div>
-            <div className={styles.aoctext}>
+            <div className={styles.cartcardtext1}>
                 <p>Cod. 31591</p>
                 <h1>Set of dices - White Dragon Collection</h1>
-                <div className={styles.aoctext2}>
+                <div className={styles.cartcardtext2}>
                 <h2><strong>Price:</strong></h2>
                 <h3>$199</h3>
                 </div>
-                <div className={styles.aoctext3}>
+                <div className={styles.cartcardtext3}>
                 <h2><strong>Stock:</strong></h2>
                 <h3>5</h3>
                 </div>
-                <div className={styles.aocbtns}>
+                <div className={styles.cartcardbtns}>
                     <SubmitBtn text="HIDE PRODUCT" />
-                    <div className={styles.aocbtnsicon}>
+                    <div className={styles.cartcardbtnsicon}>
                         <FaPen />
                     </div>
-                    <div className={styles.aocbtnsicon2}>
+                    <div className={styles.cartcardbtnsicon2}>
                         <FaTrashAlt />
                     </div>
                 </div>
@@ -40,4 +40,4 @@ function ProductCard() {
     )
 }
 
-export default ProductCard;
+export default CartCard;

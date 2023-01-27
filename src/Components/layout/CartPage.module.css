@@ -1,0 +1,43 @@
+.cartbody {
+    width: 1520px;
+    min-height: 800px;
+}
+
+.cartbodytext1 {
+    width: 1013px;
+    height: 800px;
+    background-color: #E5E9EC;
+    float: left;
+}
+
+.cartbody2 {
+    width: 507px;
+    height: 800px;
+    background-color: #F4F4F4;
+    float: right;
+}
+
+.cartbodytext1 > button {
+    background-color: transparent;
+    border: 2px solid #6B6A6A;
+    border-radius: 5px;
+    height: 40px;
+    width: 200px;
+    font-weight: bold;
+    position: absolute;
+    left: 660px;
+    top: 190px;
+}
+
+.cartbodytext1 > button:hover {
+    cursor: pointer;
+    border: 2px solid #D3312B;
+    color: #D3312B;
+
+}
+
+.cartbodytext1 > h1 {
+    position: absolute;
+    top: 170px;
+    left: 90px;
+}
