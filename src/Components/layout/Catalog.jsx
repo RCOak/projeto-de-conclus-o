@@ -5,20 +5,26 @@ import Card from './Card.jsx'
 
 function Catalog() {
   return(
-    <div className={styles.midhome}>
-        <div className={styles.mhcontainer}>
-            <Card />
-            <Card />
-            <Card />
+    <div className={styles.catalogpage}>
+      <div className={styles.catalogmenu}>
+        <h1>Filter</h1>
+        <div className={styles.cataloglinha}>
+          <p> </p>
         </div>
-        <div className={styles.mhcontainer}>
-            <Card />
-            <Card />
-            <Card />
-        </div>
-        <div className={styles.mhbtn}>
-          <button>SEE MORE</button>
-        </div>
+      </div>
+      <div className={styles.catalogcontainer}>
+        <Card />
+        <Card />
+        <Card />
+      </div>
+      <div className={styles.catalogcontainer2}>
+        <Card />
+        <Card />
+        <Card />
+      </div>
+      <div className={styles.catalogcontainerbtn}>
+        <button>SEE MORE</button>
+      </div>
     </div>
   )
 }
