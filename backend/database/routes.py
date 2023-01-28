@@ -1,5 +1,8 @@
 from database import app, ma, db, bcrypt, models, serializers, Session
-from flask import jsonify, request, Response
+from flask import jsonify, request
+from email.message import EmailMessage
+import ssl
+import smtplib
 
 @app.route("/")
 @app.route("/home")
@@ -79,23 +82,12 @@ def delete_item(id):
 @app.route('/register', methods = ['POST'])
 def register_user():
     id = None
-    print (request.json)
-    #request_dict = json.dump(request.json)
     username = request.json["username"]
     email_address = request.json["email_address"]
     password_hash = request.json["password_hash"]
-    if "adress" in request.json.keys(): 
-        adress = request.json["adress"]
-    else:
-        adress = ""
-    if "postal_code" in request.json.keys():
-        postal_code = request.json["postal_code"]
-    else:
-        postal_code = ""
-    if "mobile" in request.json.keys():
-        mobile = request.json["mobile"]
-    else:
-        mobile = ""
+    adress = request.json["adress"]
+    postal_code = request.json["postal_code"]
+    mobile = request.json["mobile"]
 
     password_hash = bcrypt.generate_password_hash(password_hash)
 
@@ -108,15 +100,8 @@ def register_user():
         
     db.Session.add(new_user)
     db.Session.commit()
-
-    msg = Message("Welcome to our site", recipients=[email_address])
-    msg.body = "Thanks for signing up!"
-    mail.send(msg)
-    resp = flask.Response(serializers.user_schema.jsonify(new_user))
-    resp.headers['Access-Control-Allow-Origin'] = '*'
-    return resp
     
-    #return serializers.user_schema.jsonify(new_user), 201
+    return serializers.user_schema.jsonify(new_user), 201
 
 @app.route('/get_user/<id>', methods = ['GET'])
 def get_user(id):
@@ -175,8 +160,25 @@ def delete_user(id):
     
     return serializers.user_schema.jsonify(user)
 
-@app.route('/send_email', methods = ['POST'])
+@app.route('/send_email', methods = ['GET'])
 def send_email():
-    msg = Message("Welcome to our site", recipients=['fselva@gmail.com'])
-    msg.body = "Thanks for signing up!"
-    mail.send(msg)
+    
+    email_sender = 'fselva@gmail.com'
+    email_password = 'wzfkpgzmmiqerxqx'
+    email_receiver = 'fowocey932@minterp.com'
+    subject = 'teste'
+    body = 'testando 1,2,3.'
+
+    em = EmailMessage()
+    em['From'] = email_sender
+    em['To'] = email_receiver
+    em['subject'] = subject
+    em.set_content(body)
+
+    context = ssl.create_default_context()
+
+    with smtplib.SMTP_SSL( 'smtp.gmail.com' , 465, context=context) as smtp:
+        smtp.login(email_sender, email_password)
+        smtp.sendmail(email_sender, email_receiver, em.as_string())
+
+    return jsonify({'Mail':'Sent'})

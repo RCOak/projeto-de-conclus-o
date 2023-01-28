@@ -26,12 +26,18 @@ class User(db.Model):
     username = db.Column(db.String(120), nullable=False, unique=True)
     email_address = db.Column(db.String(60), nullable=False, unique=True)
     password_hash = db.Column(db.String(60), nullable=False)
-    adress = db.Column(db.String(120), nullable=False)
-    postal_code = db.Column(db.String(60), nullable=False)
-    mobile = db.Column(db.String(20), nullable=False)    
+    adress = db.Column(db.String(120), nullable=True)
+    postal_code = db.Column(db.String(60), nullable=True)
+    mobile = db.Column(db.String(20), nullable=True)    
     budget = db.Column(db.Integer(), nullable=False, default=100)
     date_created = db.Column(db.DateTime, default=datetime.utcnow)
     orders = db.relationship('Order', backref='user', lazy=True)
+    full_name = db.Column(db.String(120), nullable=True)
+    city = db.Column(db.String(60), nullable=True)
+    state = db.Column(db.String(60), nullable=True)
+    country = db.Column(db.String(60), nullable=True)
+    photo = db.Column(db.BLOB(), nullable=True)
+    
 
     def __repr__(self):
         return f'User. {self.id}'
@@ -56,12 +62,15 @@ class Item(db.Model):
     date_created = db.Column(db.DateTime, default=datetime.utcnow)
     order_item_id = db.Column(db.Integer(), db.ForeignKey('order_item.id'))
     image = db.Column(db.BLOB(), nullable=False)
+    category = db.Column(db.String(20), nullable=False)
+    tag = db.Column(db.String(20), nullable=True)
+    banner = db.Column(db.BLOB(), nullable=False)
 
     def __repr__(self):
         return f'Item. {self.name}'
 
     def __init__(self, id, name, price, description, stock, date_created,
-     order_item_id, image):
+     order_item_id, image, category, tag, banner):
         self.id = id
         self.name = name
         self.price = price
@@ -70,6 +79,9 @@ class Item(db.Model):
         self.date_created = date_created
         self.order_item_id = order_item_id
         self.image = image
+        self.category = category
+        self.tag = tag
+        self.banner = banner
         
 
 class Order(db.Model):

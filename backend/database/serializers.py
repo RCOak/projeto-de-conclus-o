@@ -10,15 +10,16 @@ orderItems_schema = OrderItemSchema(many=True)
 class UserSchema(ma.Schema):
     class Meta:
         fields = ('id', 'username', 'email_address', 'password_hash', 'adress',
-                  'postal_code', 'mobile', 'budget', 'date_created', 'orders')
+                 'postal_code', 'mobile', 'budget', 'date_created', 'orders',
+                 'full_name', 'city', 'state', 'country', 'photo')
 
 user_schema = UserSchema()
 users_schema = UserSchema(many=True)
-
+    
 class ItemSchema(ma.Schema):
     class Meta:
         fields = ('id', 'name', 'price', 'description', 'stock', 'date_created',
-     'order_item_id', 'image')
+     'order_item_id', 'image', 'category','tag', 'banner')
 
 item_schema = ItemSchema()
 items_schema = ItemSchema(many=True)
@@ -30,4 +31,3 @@ class OrderSchema(ma.Schema):
 
 order_schema = OrderSchema()
 Orders_schema = OrderSchema(many=True)
-
