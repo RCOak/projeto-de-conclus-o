@@ -24,9 +24,6 @@ function Catalog() {
         <Card />
         <Card />
       </div>
-      <div className={styles.catalogcontainerbtn}>
-        <button>SEE MORE</button>
-      </div>
     </div>
   )
 }

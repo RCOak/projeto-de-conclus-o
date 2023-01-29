@@ -16,7 +16,7 @@
     opacity: 0.5;
 }
 
-.tophome > a {
+.bannerhome {
     color: white;
     opacity: 1;
     text-decoration: none;
@@ -32,7 +32,7 @@
     height: 250px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .thcard1 {
@@ -43,15 +43,19 @@
     height: 200px;
     width: 350px;
     color: #fff;
+    cursor: pointer;
+    margin-bottom: 0;
 }
 
 .thcard1 > p {
     position: relative;
     margin: 10px;
-    top: 140px;
+    top: 70px;
+    right: 130px;
     font-weight: bold;
     font-size: large;
 }
+
 
 .thcard2 {
     background-image: url("../images/Joias_e_Acessorios.png");
@@ -62,12 +66,14 @@
     width: 350px;
     color: #fff;
     margin: 106px;
+    cursor: pointer;
 }
 
 .thcard2 > p {
     position: relative;
     margin: 10px;
-    top: 140px;
+    top: 70px;
+    right: 100px;
     font-weight: bold;
     font-size: large;
 }
@@ -80,12 +86,15 @@
     height: 200px;
     width: 350px;
     color: #fff;
+    cursor: pointer;
+    margin-bottom: 0;
 }
 
 .thcard3 > p {
     position: relative;
     margin: 10px;
-    top: 140px;
+    top: 70px;
+    right: 80px;
     font-weight: bold;
     font-size: large;
 }

@@ -22,9 +22,6 @@ function Navbar() {
                   <li className={styles.item}>
                   <span className={styles.icons}><BsEnvelopeFill /></span><p>email</p>
                   </li>
-                  <li className={styles.itemb}>
-                  <p className={styles.iconsb}><BsSearch /></p>
-                  </li>
                 </ul>           
           </div>
           <nav className={styles.navbar}>
@@ -44,16 +41,16 @@ function Navbar() {
                 <div className={styles.itemmenu}>
                   <img className={styles.menu} src={MenuDado} alt='' />
                   <div className={styles.itemmenu_content}>
-                    <a href="#">DICES</a>
+                    <Link to='/catalog'>DICES</Link>
                     <br></br>
                     <br></br>
-                    <a href="#">ACCESSORIES</a>
+                    <Link to='/catalog'>ACCESSORIES</Link>
                     <br></br>
                     <br></br>
-                    <a href="#">BOXES AND BAGS</a>
+                    <Link to='/catalog'>BOXES AND BAGS</Link>
                     <br></br>
                     <br></br>
-                    <a href="#">ADVENTURER'S JOURNAL</a>
+                    <Link to='/'>ADVENTURER'S JOURNAL</Link>
                   </div>
                 </div>           
               </div>

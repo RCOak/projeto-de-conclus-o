@@ -38,6 +38,7 @@
     font-weight: bolder;
     margin: 10px;
     cursor: pointer;
+    font-size: small;
 }
 
 .clbox button a {

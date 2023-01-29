@@ -8,6 +8,7 @@
     margin-bottom: 30px;
     cursor: pointer;
     background-image: linear-gradient(#B1B1B1, #FFFFFF);
+    font-size: small;
 }
 
 .submitbutton2:hover {

@@ -1,7 +1,9 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 import styles from './MidHome.module.css'
 import Card from './Card.jsx'
+import Btnhome from '../forms/Btnhome.jsx'
 
 function MidHome() {
   return(
@@ -25,7 +27,7 @@ function MidHome() {
             <Card />
         </div>
         <div className={styles.mhbtn}>
-          <button>SEE MORE</button>
+          <Link to='/catalog'><Btnhome text="SEE MORE" /></Link>
         </div>
     </div>
   )

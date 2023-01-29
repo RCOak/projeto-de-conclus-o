@@ -1,6 +1,8 @@
 .ulbox {
     width: 1520px;
-    height: 1097px;
+    height: 800px;
+    position: relative;
+    bottom: 480px;
 }
 
 .formbox1 {

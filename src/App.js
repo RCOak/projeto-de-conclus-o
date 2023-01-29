@@ -12,7 +12,9 @@ import LoginConfirm from "./Components/pages/LoginConfirm.js";
 import LoginUser from "./Components/pages/LoginUser.js";
 import LoginOrder from "./Components/pages/LoginOrder.js";
 import LoginAdm from "./Components/pages/LoginAdm.js";
-import OrdersAdm from "./Components/pages/OrdersAdm.js"
+import OrdersAdm from "./Components/pages/OrdersAdm.js";
+import ProductPage from "./Components/pages/ProductPage.js";
+import LoginWish from "./Components/pages/LoginWish.js"; 
 
 import Container from "./Components/layout/Container.js";
 import Navbar from "./Components/layout/Navbar.jsx";
@@ -34,12 +36,14 @@ function App() {
               <Route exact path='/passrecover' element={<PassRecover />} />
               <Route exact path='/loginuser' element={<LoginUser />} />
               <Route exact path='/loginorder' element={<LoginOrder />} />
+              <Route exact path='/loginwish' element={<LoginWish />} />
               <Route exact path='/loginadm' element={<LoginAdm />} />
               <Route exact path='/productsadm' element={<ProductsAdm />} />
               <Route exact path='/ordersadm' element={<OrdersAdm />} />
               <Route exact path='/nwproduct' element={<NewProduct />} />
               <Route exact path='/nwblog' element={<NewBlog />} />
               <Route exact path='/catalog' element={<CatalogPage />} />
+              <Route exact path='/product' element={<ProductPage />} />
               <Route exact path='/cart' element={<Cart />} />
             </Routes>
           </Container>

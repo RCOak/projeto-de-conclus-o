@@ -4,10 +4,12 @@
 }
 
 .form_control span {
-    position: absolute;
-    top: 50%;
-    left: 16px;
+    position: relative;
+    top: 5px;
+    right: 360px;
     translate: 0 -50%;
+    font-size: x-large;
+    color: #676767;
 }
 
 .form_control span img {

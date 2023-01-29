@@ -2,6 +2,7 @@
     display: grid;
     gap: 16px;
     margin: 0px;
+    margin-left: 20px;
 }
 
 .dhabtn {
@@ -14,6 +15,7 @@
     font-weight: bolder;
     margin: 10px;
     cursor: pointer;
+    font-size: small;
 }
 
 .dhabtn a {
@@ -28,9 +30,11 @@
 .forgotpass a {
     color: #BDBDBD;
     margin-bottom: 20px;
+    margin-left: 20px;
 }
 
 .btns {
     display: flex;
     margin-top: 10px;
+    margin-left: 25px;
 }

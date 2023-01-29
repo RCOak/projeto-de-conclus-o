@@ -9,8 +9,7 @@ function NewBlog() {
         </div>
         <div className={styles.cnblogbox}>
             <div className={styles.cnblogtext}>
-              <h1>Let's make your account</h1>
-              <p>Enter your data and confirm your data and roll your attributes!</p>
+
             </div>
         </div>
     </div>

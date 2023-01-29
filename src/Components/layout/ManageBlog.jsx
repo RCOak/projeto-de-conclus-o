@@ -1,8 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 import Admscroll from '../icons/Admscroll.png'
 import AdmInfoHeader from './AdmInfoHeader.jsx';
-import SubmitBtn2 from '../forms/SubmitBtn2.jsx';
 import CardBlog2 from '../layout/CardBlog2.jsx';
 import styles from './ManageBlog.module.css';
 
@@ -12,7 +12,9 @@ function ManageBlog() {
     <div className={styles.manageblogbox}>
         <AdmInfoHeader image={Admscroll} text1={"SCROLLS OF INSPIRATION"} text2={"MANAGE BLOG"} />
         <div className={styles.manageblogbtn}>
-            <SubmitBtn2 text="Create Blog Post" />
+          <Link to='/nwblog'>
+            <button className={styles.createblogbtn}>Create Blog Post</button>
+          </Link>
         </div>
         <div className={styles.manageblogcard}>
             <CardBlog2 />

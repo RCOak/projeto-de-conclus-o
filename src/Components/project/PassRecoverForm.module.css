@@ -19,15 +19,16 @@
     border-radius: 10px;
     width: 202px;
     height: 35px;
-    color: #B1B1B1;
+    color: #1e1e1e;
     background-color: transparent;
     font-weight: bolder;
     margin: 10px;
     cursor: pointer;
+    font-size: small;
 }
 
 .dhabtn a {
-    color: #B1B1B1;
+    color: #1e1e1e;
     text-decoration: none;
 }
 

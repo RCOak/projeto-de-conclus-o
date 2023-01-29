@@ -25,20 +25,19 @@ function CreateLgForm({ btnText, checktext, handleSubmit, userData }) {
    
   return(
     <div>
-            <form onSubmit={submit} className={styles.loginforms}>
-                  <LgInput type="text" name='username' placeholder='Enter your Username' icon={BsFillPersonFill} handleOnChange={handleChange} />
-                  <LgInput type="text" name='email_address' placeholder='Enter your e-mail' icon={BsLock} handleOnChange={handleChange} />
-                  <LgInput type="password" name='password_hash' placeholder='Enter your password' icon={BsLock} handleOnChange={handleChange} />
-                  <LgInput type="password" name='repassword_hash' placeholder='Reinsert your password' icon={BsLock} handleOnChange={handleChange} />
-                  <CheckBox checktext='I read and accept the Terms and Conditions'/>
-                  <div className={styles.btns}>
-                <button className={styles.backlgbtn2}>
-                <Link to='/login'>BACK</Link>
-                </button>
-                <SubmitBtn2 text={btnText}/>
-            </div>
-            </form>
-
+      <form onSubmit={submit} className={styles.loginforms}>
+        <LgInput type="text" name='username' placeholder='Enter your Username' icon={<BsFillPersonFill />} handleOnChange={handleChange} />
+        <LgInput type="text" name='email_address' placeholder='Enter your e-mail' icon={<BsLock />} handleOnChange={handleChange} />
+        <LgInput type="password" name='password_hash' placeholder='Enter your password' icon={<BsLock />} handleOnChange={handleChange} />
+        <LgInput type="password" name='repassword_hash' placeholder='Reinsert your password' icon={<BsLock />} handleOnChange={handleChange} />
+        <CheckBox checktext='I read and accept the Terms and Conditions'/>
+        <div className={styles.btns}>
+          <button className={styles.backlgbtn2}>
+            <Link to='/login'>BACK</Link>
+          </button>
+          <SubmitBtn2 text={btnText}/>
+        </div>
+      </form>
     </div>
   )
 }

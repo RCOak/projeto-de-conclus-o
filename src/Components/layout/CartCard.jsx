@@ -26,7 +26,7 @@ function CartCard() {
                 <h3>5</h3>
                 </div>
                 <div className={styles.cartcardbtns}>
-                    <SubmitBtn text="HIDE PRODUCT" />
+                    <SubmitBtn text="Hide Product" />
                     <div className={styles.cartcardbtnsicon}>
                         <FaPen />
                     </div>

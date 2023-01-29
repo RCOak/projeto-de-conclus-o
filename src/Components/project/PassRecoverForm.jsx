@@ -10,12 +10,12 @@ function PassRecoverForm({ btnText }) {
   return(
     <div>
             <form className={styles.prform}>
-                <LgInput type="text" name='loginUser' placeholder='Enter Username or e-mail' icon={BsFillPersonFill} />
+                <LgInput type="text" name='loginUser' placeholder='Enter Username or e-mail' icon={<BsFillPersonFill />} />
                 <div className={styles.btns}>
                     <button className={styles.dhabtn}>
-                    <Link to='/logincreate'>BACK</Link>
+                    <Link to='/login'>BACK</Link>
                     </button>
-                    <SubmitBtn text={btnText}/>
+                    <SubmitBtn text={btnText} />
                 </div>
             </form>
     </div>
