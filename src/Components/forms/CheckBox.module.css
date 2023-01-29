@@ -1,7 +1,6 @@
 .checkbox {
     color: #BDBDBD;
     display: flex;
-    justify-content: center;
     align-content: center;
 }
 
@@ -14,3 +13,7 @@
 .checkbox p {
     margin: 10px;
 }
+
+.checkbox > input[type="checkbox"]:checked {
+    background-color: #ce2f29;
+  }

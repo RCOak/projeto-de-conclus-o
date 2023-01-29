@@ -1,0 +1,27 @@
+input[type=range]{
+    -webkit-appearance: none;
+}
+
+input[type="range"] {
+    width: 230px;
+    height: 5px;
+    background: #ce2f29;
+    outline: none;
+    border-radius: 10px;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #f1f5f7;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    width: 5px;
+    height: 5px;
+    background: #f1f5f7;
+    cursor: pointer;
+  }

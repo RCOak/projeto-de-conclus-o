@@ -2,6 +2,7 @@ import React from 'react'
 
 import styles from './Catalog.module.css'
 import Card from './Card.jsx'
+import CatalogForm from '../project/CatalogForm.jsx'
 
 function Catalog() {
   return(
@@ -11,6 +12,7 @@ function Catalog() {
         <div className={styles.cataloglinha}>
           <p> </p>
         </div>
+        <CatalogForm />
       </div>
       <div className={styles.catalogcontainer}>
         <Card />

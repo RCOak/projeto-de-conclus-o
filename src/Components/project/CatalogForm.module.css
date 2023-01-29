@@ -1,0 +1,15 @@
+.catalogformpage {
+    margin-left: 20px;
+    position: absolute;
+    top: 250px;
+}
+
+.catalogformpage > h1 {
+    font-size: x-large;
+    color: #ce2f29;
+}
+
+.catalogcheck {
+display: block;
+justify-content: flex-start;
+}
