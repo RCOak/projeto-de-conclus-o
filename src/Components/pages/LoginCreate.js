@@ -12,7 +12,7 @@ function LoginCreate() {
 
     function createUser(user) {
 
-        fetch('https://5000-rcoak-projetodeconclus-hq62i26iwe6.ws-eu84.gitpod.io/register', {
+        fetch('https://3001-rcoak-projetodeconclus-shrbdhq0zw6.ws-eu84.gitpod.io/register', {
             method: 'POST',
             mode: "cors",
             headers: {
